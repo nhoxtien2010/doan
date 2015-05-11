@@ -1,0 +1,29 @@
+<h1>Listing huanluyenviens</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ten</th>
+      <th>Tuoi</th>
+      <th>Quoctich</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @huanluyenviens.each do |huanluyenvien| %>
+      <tr>
+        <td><%= huanluyenvien.ten %></td>
+        <td><%= huanluyenvien.tuoi %></td>
+        <td><%= huanluyenvien.quoctich %></td>
+        <td><%= link_to 'Show', huanluyenvien %></td>
+        <td><%= link_to 'Edit', edit_huanluyenvien_path(huanluyenvien) %></td>
+        <td><%= link_to 'Destroy', huanluyenvien, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Huanluyenvien', new_huanluyenvien_path %>

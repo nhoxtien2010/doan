@@ -1,0 +1,25 @@
+<%= form_for(@lichthidau) do |f| %>
+  <% if @lichthidau.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@lichthidau.errors.count, "error") %> prohibited this lichthidau from being saved:</h2>
+
+      <ul>
+      <% @lichthidau.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :muagiai %><br>
+    <%= f.text_field :muagiai %>
+  </div>
+  <div class="field">
+    <%= f.label :vongdau_id %><br>
+    <%= f.text_field :vongdau_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

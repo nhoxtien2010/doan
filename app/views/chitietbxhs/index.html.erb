@@ -1,0 +1,45 @@
+<h1>Listing chitietbxhs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Thuhang</th>
+      <th>Sotranthidau</th>
+      <th>Diem</th>
+      <th>Hieuso</th>
+      <th>Tongsobanthang</th>
+      <th>Sotranthang</th>
+      <th>Sotranghoa</th>
+      <th>Sotrangthua</th>
+      <th>Bangxephang</th>
+      <th>Doibong</th>
+      <th>Lenxuonghang</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @chitietbxhs.each do |chitietbxh| %>
+      <tr>
+        <td><%= chitietbxh.thuhang %></td>
+        <td><%= chitietbxh.sotranthidau %></td>
+        <td><%= chitietbxh.diem %></td>
+        <td><%= chitietbxh.hieuso %></td>
+        <td><%= chitietbxh.tongsobanthang %></td>
+        <td><%= chitietbxh.sotranthang %></td>
+        <td><%= chitietbxh.sotranghoa %></td>
+        <td><%= chitietbxh.sotrangthua %></td>
+        <td><%= chitietbxh.bangxephang %></td>
+        <td><%= chitietbxh.doibong %></td>
+        <td><%= chitietbxh.lenxuonghang %></td>
+        <td><%= link_to 'Show', chitietbxh %></td>
+        <td><%= link_to 'Edit', edit_chitietbxh_path(chitietbxh) %></td>
+        <td><%= link_to 'Destroy', chitietbxh, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Chitietbxh', new_chitietbxh_path %>

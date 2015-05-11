@@ -1,0 +1,61 @@
+<%= form_for(@doibong) do |f| %>
+  <% if @doibong.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@doibong.errors.count, "error") %> prohibited this doibong from being saved:</h2>
+
+      <ul>
+      <% @doibong.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ten %><br>
+    <%= f.text_field :ten %>
+  </div>
+  <div class="field">
+    <%= f.label :diachi %><br>
+    <%= f.text_field :diachi %>
+  </div>
+  <div class="field">
+    <%= f.label :dienthoai %><br>
+    <%= f.text_field :dienthoai %>
+  </div>
+  <div class="field">
+    <%= f.label :fax %><br>
+    <%= f.text_field :fax %>
+  </div>
+  <div class="field">
+    <%= f.label :website %><br>
+    <%= f.text_field :website %>
+  </div>
+  <div class="field">
+    <%= f.label :facebook %><br>
+    <%= f.text_field :facebook %>
+  </div>
+  <div class="field">
+    <%= f.label :ngaytl %><br>
+    <%= f.date_select :ngaytl %>
+  </div>
+  <div class="field">
+    <%= f.label :mauao %><br>
+    <%= f.text_field :mauao %>
+  </div>
+  <div class="field">
+    <%= f.label :bacsy %><br>
+    <%= f.text_field :bacsy %>
+  </div>
+  <div class="field">
+    <%= f.label :nguoidaidientruyenthong %><br>
+    <%= f.text_field :nguoidaidientruyenthong %>
+  </div>
+  <div class="field">
+    <%= f.label :huanluyenvien_id %><br>
+    <%= f.text_field :huanluyenvien_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

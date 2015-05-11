@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Usernam:</strong>
+  <%= @taikhoan.usernam %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @taikhoan.password %>
+</p>
+
+<%= link_to 'Edit', edit_taikhoan_path(@taikhoan) %> |
+<%= link_to 'Back', taikhoans_path %>

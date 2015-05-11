@@ -1,0 +1,29 @@
+<%= form_for(@huanluyenvien) do |f| %>
+  <% if @huanluyenvien.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@huanluyenvien.errors.count, "error") %> prohibited this huanluyenvien from being saved:</h2>
+
+      <ul>
+      <% @huanluyenvien.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ten %><br>
+    <%= f.text_field :ten %>
+  </div>
+  <div class="field">
+    <%= f.label :tuoi %><br>
+    <%= f.text_field :tuoi %>
+  </div>
+  <div class="field">
+    <%= f.label :quoctich %><br>
+    <%= f.text_field :quoctich %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

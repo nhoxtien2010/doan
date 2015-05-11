@@ -1,0 +1,29 @@
+<%= form_for(@baiviet) do |f| %>
+  <% if @baiviet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@baiviet.errors.count, "error") %> prohibited this baiviet from being saved:</h2>
+
+      <ul>
+      <% @baiviet.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tieude %><br>
+    <%= f.text_field :tieude %>
+  </div>
+  <div class="field">
+    <%= f.label :noidung %><br>
+    <%= f.text_field :noidung %>
+  </div>
+  <div class="field">
+    <%= f.label :taikhoan_id %><br>
+    <%= f.text_field :taikhoan_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

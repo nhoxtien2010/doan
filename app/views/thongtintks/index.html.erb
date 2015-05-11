@@ -1,0 +1,39 @@
+<h1>Listing thongtintks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Hinhanh</th>
+      <th>Email</th>
+      <th>Ten</th>
+      <th>Tuoi</th>
+      <th>Diachi</th>
+      <th>Sdt</th>
+      <th>Gioitinh</th>
+      <th>Taikhoan</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @thongtintks.each do |thongtintk| %>
+      <tr>
+        <td><%= thongtintk.hinhanh %></td>
+        <td><%= thongtintk.email %></td>
+        <td><%= thongtintk.ten %></td>
+        <td><%= thongtintk.tuoi %></td>
+        <td><%= thongtintk.diachi %></td>
+        <td><%= thongtintk.sdt %></td>
+        <td><%= thongtintk.gioitinh %></td>
+        <td><%= thongtintk.taikhoan %></td>
+        <td><%= link_to 'Show', thongtintk %></td>
+        <td><%= link_to 'Edit', edit_thongtintk_path(thongtintk) %></td>
+        <td><%= link_to 'Destroy', thongtintk, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Thongtintk', new_thongtintk_path %>

@@ -1,0 +1,37 @@
+<h1>Listing trandaus</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Banthangdoinha</th>
+      <th>Banthangdoikhach</th>
+      <th>Doinha</th>
+      <th>Doikhach</th>
+      <th>Thoigian</th>
+      <th>Vongdau</th>
+      <th>Sanvandong</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @trandaus.each do |trandau| %>
+      <tr>
+        <td><%= trandau.banthangdoinha %></td>
+        <td><%= trandau.banthangdoikhach %></td>
+        <td><%= trandau.doinha %></td>
+        <td><%= trandau.doikhach %></td>
+        <td><%= trandau.thoigian %></td>
+        <td><%= trandau.vongdau %></td>
+        <td><%= trandau.sanvandong %></td>
+        <td><%= link_to 'Show', trandau %></td>
+        <td><%= link_to 'Edit', edit_trandau_path(trandau) %></td>
+        <td><%= link_to 'Destroy', trandau, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Trandau', new_trandau_path %>

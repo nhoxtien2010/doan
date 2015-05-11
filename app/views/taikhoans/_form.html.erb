@@ -1,0 +1,25 @@
+<%= form_for(@taikhoan) do |f| %>
+  <% if @taikhoan.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@taikhoan.errors.count, "error") %> prohibited this taikhoan from being saved:</h2>
+
+      <ul>
+      <% @taikhoan.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :usernam %><br>
+    <%= f.text_field :usernam %>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br>
+    <%= f.text_field :password %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

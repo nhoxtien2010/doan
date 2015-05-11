@@ -1,0 +1,33 @@
+<%= form_for(@sanvandong) do |f| %>
+  <% if @sanvandong.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@sanvandong.errors.count, "error") %> prohibited this sanvandong from being saved:</h2>
+
+      <ul>
+      <% @sanvandong.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :soghe %><br>
+    <%= f.text_field :soghe %>
+  </div>
+  <div class="field">
+    <%= f.label :diachi %><br>
+    <%= f.text_field :diachi %>
+  </div>
+  <div class="field">
+    <%= f.label :thongtinthem %><br>
+    <%= f.text_field :thongtinthem %>
+  </div>
+  <div class="field">
+    <%= f.label :doibong_id %><br>
+    <%= f.text_field :doibong_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

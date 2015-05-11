@@ -1,0 +1,27 @@
+<h1>Listing taikhoans</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Usernam</th>
+      <th>Password</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @taikhoans.each do |taikhoan| %>
+      <tr>
+        <td><%= taikhoan.usernam %></td>
+        <td><%= taikhoan.password %></td>
+        <td><%= link_to 'Show', taikhoan %></td>
+        <td><%= link_to 'Edit', edit_taikhoan_path(taikhoan) %></td>
+        <td><%= link_to 'Destroy', taikhoan, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Taikhoan', new_taikhoan_path %>

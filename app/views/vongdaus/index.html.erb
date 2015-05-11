@@ -1,0 +1,31 @@
+<h1>Listing vongdaus</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Stt</th>
+      <th>Sotrandathidau</th>
+      <th>Thoigianbatdau</th>
+      <th>Thoigianketthuc</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @vongdaus.each do |vongdau| %>
+      <tr>
+        <td><%= vongdau.stt %></td>
+        <td><%= vongdau.sotrandathidau %></td>
+        <td><%= vongdau.thoigianbatdau %></td>
+        <td><%= vongdau.thoigianketthuc %></td>
+        <td><%= link_to 'Show', vongdau %></td>
+        <td><%= link_to 'Edit', edit_vongdau_path(vongdau) %></td>
+        <td><%= link_to 'Destroy', vongdau, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Vongdau', new_vongdau_path %>

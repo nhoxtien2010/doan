@@ -1,0 +1,45 @@
+<h1>Listing doibongs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ten</th>
+      <th>Diachi</th>
+      <th>Dienthoai</th>
+      <th>Fax</th>
+      <th>Website</th>
+      <th>Facebook</th>
+      <th>Ngaytl</th>
+      <th>Mauao</th>
+      <th>Bacsy</th>
+      <th>Nguoidaidientruyenthong</th>
+      <th>Huanluyenvien</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @doibongs.each do |doibong| %>
+      <tr>
+        <td><%= doibong.ten %></td>
+        <td><%= doibong.diachi %></td>
+        <td><%= doibong.dienthoai %></td>
+        <td><%= doibong.fax %></td>
+        <td><%= doibong.website %></td>
+        <td><%= doibong.facebook %></td>
+        <td><%= doibong.ngaytl %></td>
+        <td><%= doibong.mauao %></td>
+        <td><%= doibong.bacsy %></td>
+        <td><%= doibong.nguoidaidientruyenthong %></td>
+        <td><%= doibong.huanluyenvien %></td>
+        <td><%= link_to 'Show', doibong %></td>
+        <td><%= link_to 'Edit', edit_doibong_path(doibong) %></td>
+        <td><%= link_to 'Destroy', doibong, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Doibong', new_doibong_path %>

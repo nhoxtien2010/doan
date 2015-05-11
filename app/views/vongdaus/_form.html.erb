@@ -1,0 +1,33 @@
+<%= form_for(@vongdau) do |f| %>
+  <% if @vongdau.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@vongdau.errors.count, "error") %> prohibited this vongdau from being saved:</h2>
+
+      <ul>
+      <% @vongdau.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :stt %><br>
+    <%= f.text_field :stt %>
+  </div>
+  <div class="field">
+    <%= f.label :sotrandathidau %><br>
+    <%= f.text_field :sotrandathidau %>
+  </div>
+  <div class="field">
+    <%= f.label :thoigianbatdau %><br>
+    <%= f.datetime_select :thoigianbatdau %>
+  </div>
+  <div class="field">
+    <%= f.label :thoigianketthuc %><br>
+    <%= f.datetime_select :thoigianketthuc %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

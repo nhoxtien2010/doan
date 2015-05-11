@@ -1,0 +1,45 @@
+<%= form_for(@cauthu) do |f| %>
+  <% if @cauthu.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cauthu.errors.count, "error") %> prohibited this cauthu from being saved:</h2>
+
+      <ul>
+      <% @cauthu.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ten %><br>
+    <%= f.text_field :ten %>
+  </div>
+  <div class="field">
+    <%= f.label :tuoi %><br>
+    <%= f.text_field :tuoi %>
+  </div>
+  <div class="field">
+    <%= f.label :quoctich %><br>
+    <%= f.text_field :quoctich %>
+  </div>
+  <div class="field">
+    <%= f.label :chieucao %><br>
+    <%= f.text_field :chieucao %>
+  </div>
+  <div class="field">
+    <%= f.label :cannang %><br>
+    <%= f.text_field :cannang %>
+  </div>
+  <div class="field">
+    <%= f.label :vitri_id %><br>
+    <%= f.text_field :vitri_id %>
+  </div>
+  <div class="field">
+    <%= f.label :doibong_id %><br>
+    <%= f.text_field :doibong_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,61 @@
+<%= form_for(@chitietbxh) do |f| %>
+  <% if @chitietbxh.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@chitietbxh.errors.count, "error") %> prohibited this chitietbxh from being saved:</h2>
+
+      <ul>
+      <% @chitietbxh.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :thuhang %><br>
+    <%= f.text_field :thuhang %>
+  </div>
+  <div class="field">
+    <%= f.label :sotranthidau %><br>
+    <%= f.text_field :sotranthidau %>
+  </div>
+  <div class="field">
+    <%= f.label :diem %><br>
+    <%= f.text_field :diem %>
+  </div>
+  <div class="field">
+    <%= f.label :hieuso %><br>
+    <%= f.text_field :hieuso %>
+  </div>
+  <div class="field">
+    <%= f.label :tongsobanthang %><br>
+    <%= f.text_field :tongsobanthang %>
+  </div>
+  <div class="field">
+    <%= f.label :sotranthang %><br>
+    <%= f.text_field :sotranthang %>
+  </div>
+  <div class="field">
+    <%= f.label :sotranghoa %><br>
+    <%= f.text_field :sotranghoa %>
+  </div>
+  <div class="field">
+    <%= f.label :sotrangthua %><br>
+    <%= f.text_field :sotrangthua %>
+  </div>
+  <div class="field">
+    <%= f.label :bangxephang_id %><br>
+    <%= f.text_field :bangxephang_id %>
+  </div>
+  <div class="field">
+    <%= f.label :doibong_id %><br>
+    <%= f.text_field :doibong_id %>
+  </div>
+  <div class="field">
+    <%= f.label :lenxuonghang_id %><br>
+    <%= f.text_field :lenxuonghang_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

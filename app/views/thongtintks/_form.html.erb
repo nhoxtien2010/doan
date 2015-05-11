@@ -1,0 +1,49 @@
+<%= form_for(@thongtintk) do |f| %>
+  <% if @thongtintk.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@thongtintk.errors.count, "error") %> prohibited this thongtintk from being saved:</h2>
+
+      <ul>
+      <% @thongtintk.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :hinhanh %><br>
+    <%= f.text_field :hinhanh %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :ten %><br>
+    <%= f.text_field :ten %>
+  </div>
+  <div class="field">
+    <%= f.label :tuoi %><br>
+    <%= f.text_field :tuoi %>
+  </div>
+  <div class="field">
+    <%= f.label :diachi %><br>
+    <%= f.text_field :diachi %>
+  </div>
+  <div class="field">
+    <%= f.label :sdt %><br>
+    <%= f.text_field :sdt %>
+  </div>
+  <div class="field">
+    <%= f.label :gioitinh %><br>
+    <%= f.check_box :gioitinh %>
+  </div>
+  <div class="field">
+    <%= f.label :taikhoan_id %><br>
+    <%= f.text_field :taikhoan_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

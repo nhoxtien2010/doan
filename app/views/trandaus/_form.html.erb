@@ -1,0 +1,45 @@
+<%= form_for(@trandau) do |f| %>
+  <% if @trandau.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@trandau.errors.count, "error") %> prohibited this trandau from being saved:</h2>
+
+      <ul>
+      <% @trandau.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :banthangdoinha %><br>
+    <%= f.text_field :banthangdoinha %>
+  </div>
+  <div class="field">
+    <%= f.label :banthangdoikhach %><br>
+    <%= f.text_field :banthangdoikhach %>
+  </div>
+  <div class="field">
+    <%= f.label :doinha_id %><br>
+    <%= f.text_field :doinha_id %>
+  </div>
+  <div class="field">
+    <%= f.label :doikhach_id %><br>
+    <%= f.text_field :doikhach_id %>
+  </div>
+  <div class="field">
+    <%= f.label :thoigian %><br>
+    <%= f.datetime_select :thoigian %>
+  </div>
+  <div class="field">
+    <%= f.label :vongdau_id %><br>
+    <%= f.text_field :vongdau_id %>
+  </div>
+  <div class="field">
+    <%= f.label :sanvandong_id %><br>
+    <%= f.text_field :sanvandong_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

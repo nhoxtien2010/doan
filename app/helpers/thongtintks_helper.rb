@@ -1,0 +1,2 @@
+module ThongtintksHelper
+end
