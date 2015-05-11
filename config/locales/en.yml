@@ -1,6 +1,6 @@
 en:
   menu:
-    languages: languages
+    languages: Languages
     login: LOGIN
     news: NEWS
     players: PLAYERS
@@ -8,6 +8,4 @@ en:
     stats: STATS
     fanzone: FANZONE
     about: ABOUT
-    search: search
-    
-  
+    search: search    

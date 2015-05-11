@@ -1,7 +1,26 @@
-# Additional translations at https://github.com/plataformatec/devise/wiki/I18n
-
 vi:
   devise:
+    menu:
+      login: Đăng nhập
+      email: Địa chỉ email
+      password: Mật khẩu
+      remember_me: Duy trì đăng nhập
+      signed_up: Đăng ký
+      forgot_pass: Quên mật khẩu
+      did_not_receive_confirm: Không nhận được hướng dẫn xác nhận?
+      did_not_receive_unlock: Không nhận được hướng dẫn mở khóa?
+      sign_with: Đăng nhập với
+      edit: Sửa
+      current_waiting_for: Hiện tại đang chờ xác nhận cho
+      pass_confirm: Xác nhận mật khẩu
+      current_pass: Mật khẩu hiện tại
+      cancel_accout: Hủy bỏ tài khoản tạm thời
+      update: Cập nhật
+      unhappy: Thấy khó chịu?
+      back: Quay lại
+      char_minimum: ký tự ít nhất
+      forgot_pass: Quên mật khẩu
+      send_reset_pass: Gửi hướng dẫn khôi phục lại mật khẩu
     confirmations:
       confirmed: "Email của bạn đã được xác nhận thành công!"
       send_instructions: "Bạn vừa nhận được email hướng dẫn xác nhận tài khoản trong vòng vài phút."

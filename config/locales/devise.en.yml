@@ -2,6 +2,28 @@
 
 en:
   devise:
+    menu:
+      login: Login
+      email: Email
+      password: Password
+      remember_me: Remember me
+      signed_up: Sign up
+      forgot_pass: Forgot your password?
+      did_not_receive_confirm: Didn't receive confirmation instructions?
+      did_not_receive_unlock: Didn't receive unlock instructions?
+      sign_with: Sign in with 
+      edit: Edit
+      current_waiting_for: Currently waiting confirmation for
+      pass_confirm: Password confirmations
+      current_pass: Current password
+      cancel_accout: Cancel my account
+      update: Update
+      unhappy: Unhappy?
+      back: Back
+      char_minimum: characters minimum
+      forgot_pass: Forgot your password?
+      send_reset_pass: Send me reset password instructions
+
     confirmations:
       confirmed: "Your email address has been successfully confirmed."
       send_instructions: "You will receive an email with instructions for how to confirm your email address in a few minutes."
