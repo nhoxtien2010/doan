@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :taikhoans
   # devise_for :taikhoans
   resources :banthangs
 
