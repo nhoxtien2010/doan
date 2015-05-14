@@ -21,6 +21,24 @@ vi:
       char_minimum: ký tự ít nhất
       forgot_pass: Quên mật khẩu
       send_reset_pass: Gửi hướng dẫn khôi phục lại mật khẩu
+      resend_confirm_instruction: Gửi hướng dẫn xác nhận lại
+      welcome: Chào mừng
+      confirm_link: "Bạn có thể xác nhận lại tài khoản email thông qua đường dẫn dưới đây"
+      confirm_account: Xác nhận tài khoản của tôi
+      hello: Xin chào
+      request_change_pass: Ai đó gửi yêu cầu thay đổi mật khẩu. Bạn có thể làm việc đó thông qua đường dẫn dưới đây.
+      change_pass: Thay đổi mật khẩu của tôi
+      ignore_email: "Nếu bạn không yêu cầu việc đó, vui lòng hủy email."
+      confirm_change_pass: Mật khẩu của bạn sẽ không thay đổi cho đến khi bạn truy cập đường dẫn ở trên và tạo một cái mới
+      account_lock: Tài khoản của bạn đã bị khóa do vượt quá số lần đăng nhập.
+      click_unlock: "Click vào đường dẫn ở dưới để mở khóa tài khoản của bạn:"
+      change_your_pass: Thay đổi mật khẩu của bạn
+      new_pass: Mật khẩu mới
+      confirm_new_pass:  Xác nhận mật khẩu mới
+      resend_unlock_instruction: Gửi lại hướng dẫn mở khóa
+      leave_black: Để trống nếu bạn không muốn thay đổi nó
+      need_current_pass: chúng tôi cần mật khẩu hiện tại để xác nhận sự thay đổi của bạn
+      
     confirmations:
       confirmed: "Email của bạn đã được xác nhận thành công!"
       send_instructions: "Bạn vừa nhận được email hướng dẫn xác nhận tài khoản trong vòng vài phút."

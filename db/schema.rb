@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150506065008) do
+ActiveRecord::Schema.define(version: 20150514024634) do
 
   create_table "baiviets", force: true do |t|
     t.string   "tieude"
@@ -99,6 +99,7 @@ ActiveRecord::Schema.define(version: 20150506065008) do
     t.integer  "huanluyenvien_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "logo"
   end
 
   add_index "doibongs", ["huanluyenvien_id"], name: "index_doibongs_on_huanluyenvien_id"
@@ -153,6 +154,8 @@ ActiveRecord::Schema.define(version: 20150506065008) do
     t.integer  "doibong_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "hinhanh"
+    t.string   "ten"
   end
 
   add_index "sanvandongs", ["doibong_id"], name: "index_sanvandongs_on_doibong_id"

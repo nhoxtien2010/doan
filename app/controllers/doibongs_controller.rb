@@ -42,6 +42,6 @@ class DoibongsController < ApplicationController
     end
 
     def doibong_params
-      params.require(:doibong).permit(:ten, :diachi, :dienthoai, :fax, :website, :facebook, :ngaytl, :mauao, :bacsy, :nguoidaidientruyenthong, :huanluyenvien_id)
+      params.require(:doibong).permit(:ten, :diachi, :dienthoai, :fax, :website, :facebook, :ngaytl, :mauao, :bacsy, :nguoidaidientruyenthong, :huanluyenvien_id, :logo)
     end
 end
