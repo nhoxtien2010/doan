@@ -37,9 +37,8 @@ Rails.application.routes.draw do
 
   resources :thongtintks
 
-  get 'home/index'
-
   resources :taikhoans
+  get '/home/news', to: 'home#news'
   root to: "home#index"
   post '/change_locale/:locale', to: 'setting#change_locale', as: :change_locale
   # The priority is based upon order of creation: first created -> highest priority.
