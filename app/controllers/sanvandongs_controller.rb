@@ -42,6 +42,6 @@ class SanvandongsController < ApplicationController
     end
 
     def sanvandong_params
-      params.require(:sanvandong).permit(:soghe, :diachi, :thongtinthem, :doibong_id)
+      params.require(:sanvandong).permit(:soghe, :diachi, :thongtinthem, :doibong_id, :ten, :hinhanh)
     end
 end

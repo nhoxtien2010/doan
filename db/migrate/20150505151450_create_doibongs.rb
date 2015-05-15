@@ -10,7 +10,7 @@ class CreateDoibongs < ActiveRecord::Migration
       t.date :ngaytl
       t.string :mauao
       t.string :bacsy
-      t.string :nguoidaidientruyenthong
+      t.string :nguoidaidientruyenthong      
       t.references :huanluyenvien, index: true
 
       t.timestamps
