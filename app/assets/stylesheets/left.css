@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+#content_left{
+	width:100%;
+	float:top;
+	margin-top:3px;
+	margin-bottom:3px;
+}
+.table_nb{
+	text-align:left;
+	font-size:12px;
+	text-decoration:none;
+	}
+.table_nb a{
+	color:#000;
+}
+.tuade a p{
+	color:#000;
+	font-size:18px;
+}
+.tuade{
+	width:auto;
+	height:32px;
+}
+a:link { 
+text-decoration: none; 
+} 
+a:visited { 
+text-decoration: none; 
+} 
+a:hover { 
+text-decoration: underline; 
+color:#F00;
+font-weight:600;
+} 
+a:active { 
+text-decoration: none; 
+}
+.bxh a{
+	color:#FFF;	
+} 
+.bxh a:hover{
+	color:#F00;	
+} 
+.table_ltd{
+	color:#000;
+	font-size:12px;
+}
+.table_vd{
+	color:#30F;
+	font-size:14px;
+	font-weight:600;
+}
+.table_tlq{
+	color:#30F;
+	font-size:14px;
+	font-weight:600;
+}
+.table_about{
+	color:#000;
+}
+.table_about a{
+	color:#000;
+}
+.doibong a{
+	color:#000;
+	margin-top:30px;
+}
+.doibong a:hover{
+	color:#F00;
+	font-weight:800;
+}

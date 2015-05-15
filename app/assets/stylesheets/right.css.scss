@@ -1,0 +1,147 @@
+/* CSS Document */
+
+#right{
+width:300px;
+position:relative;
+margin-left:10px;
+float:left;
+color:#000;
+margin-top:	4px;
+
+}
+.right_xh{
+color:#000;
+font-size:13px;
+width:300px;
+text-align:center;
+}
+.right_xh td{
+border:0px;
+}
+#right .block_timkiem{
+width:300px;
+padding:0px;
+margin:0px;
+padding-top:10px;
+
+}
+.block_timkiem_top{
+width:100%;
+height:35px;
+background:url(../assets/content/bg_dmTitle.png) no-repeat;
+color:#000;
+font-weight:bold;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+
+
+}
+.icon{
+	width:35px;
+	float:left;
+	padding-top:3px;
+	
+}
+.tk_text{
+width:220px;
+float:right;
+padding-top:10px;
+
+}
+
+.block_timkiem_main{
+border:1px #6fa9cd solid;
+}
+.btn_timkiem2{
+padding-top:10px;
+padding-bottom:10px;
+}
+#tb_timkiem{
+color:#666464;
+width:290px;
+}
+#tb_timkiem tr{
+line-height:20px;
+}
+.block_danhmuc{
+width:300px;
+padding:0px;
+margin:0px;
+padding-top:10px;
+}
+.block_danhmuc_top{
+width:300px;
+height:35px;
+background:url(../assets/content/bg_dmTitle.png) no-repeat;
+color:#000;
+font-weight:bold;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+
+}
+.icon_dm{
+	width:35px;
+	float:left;
+	padding-top:3px;
+	
+}
+.dm_text{
+width:185px;
+float:left;
+padding-top:10px;
+padding-left:15px;
+
+}
+.dm_text a:hover{
+	color:#F00;
+}
+.dm_text a{
+	color:#000;
+}
+.icon_active{
+width:20px;
+float:right;
+padding-top:10px;
+padding-right:8px;
+}
+.block_dm_main{
+
+border:1px #6fa9cd solid;
+}
+
+.block_dm_main div{
+width:250px;
+background:url(../assets/content/bg_danhmuc2.png) no-repeat;
+
+
+margin:0px;
+padding-top:5px;
+padding-bottom:0px;
+padding-left:30px;
+}
+.block_dm_main div a{
+	color:#000;
+}
+
+.block_danhmuc2{
+width:300px;
+padding:0px;
+margin:0px;
+}
+#tb_hotrott{
+width:310px;
+padding-left:10px;
+color:#000;
+}
+#tb_hotrott tr{
+line-height:20px;
+font-size:12px;
+}
+
+.qc_nd{
+padding-left:5px;
+float:left;
+}
+.qc_active{
+padding-top:5px;
+}

@@ -1,0 +1,41 @@
+<script type="text/JavaScript">
+<!--
+function MM_findObj_m(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj_m(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_preloadImages_m() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages_m.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore_m() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_swapImage_m() { //v3.0
+  var i,j=0,x,a=MM_swapImage_m.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj_m(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+<div id="menud">
+<table class="menud1" width="80%"   cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="80"><a href="index.php" onMouseOut="MM_swapImgRestore_m()" onMouseOver="MM_swapImage_m('img','','img/mn_tc2.png',1)"><img src="img/mn_tc1.png" name="img" width="139" height="42" border="0"></a></td>
+    <td width="80"><a href="index.php" onMouseOut="MM_swapImgRestore_m()" onMouseOver="MM_swapImage_m('img1','','img/tddb1.png',1)"><img src="img/tddb.png" name="img1" width="139" height="42" border="0"></a></td>
+    <td width="80"><a href="index.php" onMouseOut="MM_swapImgRestore_m()" onMouseOver="MM_swapImage_m('img2','','img/tdbxh1.png',1)"><img src="img/tdbxh.png" name="img2" width="139" height="42" border="0"></a></td>
+    <td width="80"><a href="index.php" onMouseOut="MM_swapImgRestore_m()" onMouseOver="MM_swapImage_m('img3','','img/tdvd1.png',1)"><img src="img/tdvd.png" name="img3" width="139" height="42" border="0"></a></td>
+   <td width="240"><a href="index.php" onMouseOut="MM_swapImgRestore_m()" onMouseOver="MM_swapImage_m('img4','','img/tdab1.png',1)"><img src="img/tdab.png" name="img4" width="139" height="42" border="0"></a></td>
+   
+  </tr>
+</table>
+</div>
+<hr align="center" width="99%">
+

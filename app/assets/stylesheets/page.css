@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+font-family:Verdana, Arial, Helvetica, sans-serif; 
+font-size:12px;
+background:#fbfbfbfb;
+background:url(..assets/content/bg_top.png) repeat-x;
+/*chua co mau fbfbfb?? */
+margin:0px;
+padding:0px;
+color:#FFF;
+}
+#page{
+	width:1000px;
+	margin:auto;
+	position:static;
+}
+
+@charset "utf-8";
+/* reset */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
